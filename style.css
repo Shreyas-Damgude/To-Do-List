@@ -1,0 +1,116 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.lr-pad {
+  padding: 0 8%;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #bb5fff, #dc9728);
+  /* background-color: white; */
+}
+.container {
+  position: absolute;
+  width: 40%;
+  min-width: 350px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: rgb(64, 82, 138);
+  text-align: center;
+}
+.add-task {
+  padding: 25px;
+  /* background-color: linear-gradient(); */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.add-task input {
+  width: 72%;
+  border: none;
+  outline: none;
+  padding: 12px;
+  background-color: #eee;
+  font-size: 18px;
+  border-radius: 5px;
+}
+input:focus {
+  border: 1px solid #bb5fff;
+  /* border: 1px solid lightgreen; */
+}
+#btn {
+  border: none;
+  padding: 8px 20px;
+  font-size: 18px;
+  background-color: #8f28dc;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  margin-left: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px 5px rgba(227, 75, 227, 0.1);
+}
+#btn:hover {
+  background-color: #bb5fff;
+  transition: 0.3s;
+}
+input::placeholder {
+  font-size: 16px;
+}
+.task-list {
+  opacity: 0;
+  padding: 0 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+#list {
+  padding: 15px;
+  transition: 0.5s;
+}
+li {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 3px solid #eee;
+  transition: 0.5s;
+}
+.listContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+  transition: 0.5s;
+}
+.listContent button {
+  border: none;
+  padding: 8px;
+  background-color: #bb5fff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+  box-shadow: 0 0 10px 5px rgba(227, 75, 227, 0.1);
+}
+.listContent button:hover {
+  background-color: #8f28dc;
+  transition: 0.3s;
+}
+ion-icon {
+  font-size: 20px;
+}
+.currentTask {
+  cursor: pointer;
+}
+.taskCompleted {
+  text-decoration: line-through;
+}
