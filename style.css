@@ -111,6 +111,3 @@ ion-icon {
 .currentTask {
   cursor: pointer;
 }
-.taskCompleted {
-  text-decoration: line-through;
-}

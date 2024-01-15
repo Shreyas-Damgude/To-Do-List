@@ -36,6 +36,7 @@ function addTask() {
 // Removing task from the container
 function deleteTask(e) {
   const button = e.target;
+  console.log(button);
   if (!button) return;
   const action = button.dataset.action;
   taskCompleted(action, button);
@@ -49,7 +50,7 @@ function deleteTask(e) {
 
 // Task completed
 function taskCompleted(action, button) {
-  action === "complete" && button.classList.toggle("taskCompleted");
+  button.textContent += "✅";
 }
 
 // Button's function
